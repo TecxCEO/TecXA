@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dictionary Input (JSON Format):"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputJson"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="top"
+        android:hint='{"temp": 25, "status": "active"}'
+        android:inputType="textMultiLine"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btnPredict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Predict Trend"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result: Waiting for input..."
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+</LinearLayout>
